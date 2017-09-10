@@ -6,10 +6,22 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production node server",
+    "build:client": "cross-env NODE_ENV=production webpack",
+    "build:client:watch": "cross-env NODE_ENV=production webpack --watch"
   },
   "dependencies": {
-    "vue": "^2.3.3"
+    "ccapture.js": "^1.0.7",
+    "downloadjs": "^1.4.7",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "ms": "^2.0.0",
+    "serve-static": "^1.12.4",
+    "sketch-js": "^1.1.3",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3",
+    "vue": "^2.3.3",
+    "vue-router": "^2.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

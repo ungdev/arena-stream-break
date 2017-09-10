@@ -1,18 +1,27 @@
-# arena-2017-stream-break
+# UTT Arena 2017 — Stream break
 
-> UTT Arena 2017 Stream Break
+Stream Break url : http://localhost:8080
+Admin url : http://localhost:8080/admin
 
-## Build Setup
+## Stream Break Configuration
 
-``` bash
-# install dependencies
-npm install
+`client/src/Client.vue`
 
-# serve with hot reload at localhost:8080
-npm run dev
+Change:
 
-# build for production with minification
-npm run build
+```
+  recording: true,
+  recordingIntro: true,
+  fakeParticles: false,
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Recording: automatically record and download webgl (webgl -> webm)
+Recording quality : 40kbps on intro, default on background (remove option `videoBitsPerSecond`)
+
+## FFmpeg cheatsheet
+
+Change container (fix weird start/end timings)
+`ffmpeg -i test.webm -c copy intro.mp4`
+
+Convert 60fps to 30fps
+`ffmpeg -i input.mp4 -r 30 output.30fps.mp4`

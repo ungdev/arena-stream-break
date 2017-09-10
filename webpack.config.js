@@ -2,9 +2,9 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './client/src/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'client', './dist'),
     publicPath: '/dist/',
     filename: 'build.js'
   },
@@ -25,7 +25,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg|woff|woff2)$/,
+        test: /\.(png|jpg|gif|svg|woff|woff2|ogg|mp4)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
@@ -39,6 +39,7 @@ module.exports = {
     }
   },
   devServer: {
+    contentBase: path.join(__dirname, 'client'),
     historyApiFallback: true,
     noInfo: true
   },
