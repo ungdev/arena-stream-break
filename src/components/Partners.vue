@@ -1,6 +1,6 @@
 <template>
   <div class="partners">
-    <img src="../assets/bde.png" height="70">
+    <img src="../assets/scoup.png" height="70">
     <img src="../assets/rog.png" height="70">
     <img src="../assets/meltdown.png" height="70">
     <img src="../assets/tekliss.png" height="70">
