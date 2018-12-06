@@ -1,10 +1,10 @@
 <template>
   <div class="partners">
-    <img src="../assets/scoup.png" height="70">
-    <img src="../assets/rog.png" height="70">
-    <img src="../assets/meltdown.png" height="70">
-    <img src="../assets/tekliss.png" height="70">
-    <img src="../assets/silverstone.png" height="70">
+    <img src="../assets/scoup.png" height="90">
+    <img src="../assets/rog.png" height="90">
+    <img src="../assets/meltdown.png" height="90">
+    <img src="../assets/tekliss.png" height="90">
+    <img src="../assets/silverstone.png" height="90">
   </div>
 </template>
 
@@ -14,7 +14,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 150px;
   background-color: rgba(42,42,42,.66);
 
   display: flex;

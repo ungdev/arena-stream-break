@@ -66,17 +66,17 @@ video {
 }
 
 .content {
-  max-width: 1000px;
+  max-width: 1600px;
   height: 100vh;
   margin: 0 auto;
   position: relative;
 }
 
 .content > img {
-  width: 30%;
+  width: 42%;
   position: absolute;
-  top: calc(50% - 150px);
-  right: 20px;
+  top: calc(50% - 100px);
+  right: 0;
   transform: translateY(-50%);
 }
 
@@ -85,13 +85,14 @@ video {
   left: 20px;
   top: calc(50% - 150px);
   transform: translateY(-50%);
-  box-shadow: 0 0 0 2px #fff,
-          0 3px 8px rgba(0,0,0,.8);
+  box-shadow: 0 0 0 4px #fff,
+              0 5px 10px rgba(0,0,0,.8);
 }
 
 .infos {
   background-color: rgba(0,0,0,.1);
   backdrop-filter: blur(10px);
+  font-size: 22px;
   padding: 40px;
   min-width: 300px;
 }

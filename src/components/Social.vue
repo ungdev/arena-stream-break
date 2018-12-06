@@ -14,7 +14,7 @@
 <style>
 .social {
   position: absolute;
-  bottom: 125px;
+  bottom: 185px;
   left: 0;
   right: 0;
   height: 100px;
@@ -35,11 +35,12 @@
 }
 
 .social img {
-  height: 60px;
-  width: 60px;
+  height: 110px;
+  width: 110px;
 }
 
 .social h2 {
+  font-size: 42px;
   color: #fff;
   text-transform: uppercase;
 }

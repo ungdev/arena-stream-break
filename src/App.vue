@@ -11,6 +11,11 @@ export default {
 </script>
 
 <style>
+html {
+  border: 4px solid #000;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   letter-spacing: .5px;
